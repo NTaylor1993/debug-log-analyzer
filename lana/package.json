@@ -44,7 +44,7 @@
     "url": "https://github.com/certinia/debug-log-analyzer.git"
   },
   "engines": {
-    "vscode": "^1.100.0"
+    "vscode": "^1.102.0"
   },
   "categories": [
     "Other"
@@ -63,6 +63,12 @@
         "command": "lana.showLogAnalysis",
         "title": "Log: Show Apex Log Analysis",
         "icon": "./certinia-icon-color.png"
+      }
+    ],
+    "mcpServerDefinitionProviders": [
+      {
+        "id": "lanaLogAnalyzer",
+        "label": "LANA Apex Log Analyzer MCP Server"
       }
     ],
     "languages": [
@@ -181,7 +187,7 @@
   },
   "devDependencies": {
     "@types/node": "~22.16.3",
-    "@types/vscode": "~1.99.1",
+    "@types/vscode": "~1.102.0",
     "@typescript-eslint/eslint-plugin": "^8.36.0",
     "@typescript-eslint/parser": "^8.36.0",
     "concurrently": "^9.2.0",
