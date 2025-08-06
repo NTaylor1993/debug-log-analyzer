@@ -8,6 +8,7 @@ import { RetrieveLogFile } from './commands/RetrieveLogFile.js';
 import { ShowLogAnalysis } from './commands/ShowLogAnalysis.js';
 import { Display } from './display/Display.js';
 import { WhatsNewNotification } from './display/WhatsNewNotification.js';
+import { LanaMcpProvider } from './mcp/LanaMcpProvider.js';
 import { SymbolFinder } from './salesforce/codesymbol/SymbolFinder.js';
 import { VSWorkspace } from './workspace/VSWorkspace.js';
 
@@ -31,6 +32,7 @@ export class Context {
     ShowLogAnalysis.apply(this);
     ShowAnalysisCodeLens.apply(this);
     WhatsNewNotification.apply(this);
+    LanaMcpProvider.apply(this);
   }
 
   async findSymbol(symbol: string): Promise<string[]> {
