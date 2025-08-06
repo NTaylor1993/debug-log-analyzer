@@ -1,4 +1,5 @@
 packages:
   - 'lana'
   - 'lana-docs-site'
+  - 'lana-mcp-server'
   - 'log-viewer'
